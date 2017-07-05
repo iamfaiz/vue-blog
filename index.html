@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css">
+	<style>
+		body {
+			padding-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div id="app" class="container">
+		<div class="navbar navbar-default">
+			<div class="container-fluid">
+				<ul class="nav navbar-nav">
+					<li><router-link to="/">Home</router-link></li>
+					<li><router-link to="/contact">Contact</router-link></li>
+				</ul>
+			</div>
+		</div>
+
+		<router-view></router-view>
+	</div>
+
+	<script src="js/vendor/vue@2.3.js"></script>
+	<script src="js/vendor/vue-router@2.5.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
